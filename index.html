@@ -5,23 +5,66 @@
     <title>Eolikes - A Place of Free Online Tools</title>
     
     <style>
+        @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
         }
         
-        @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap');
-        
         body {
             font-family: 'PT Serif', serif;
+        }
+        
+        .mainContainer {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #282828;
+        }
+        
+        .innerBox {
+            text-align: center;
+        }
+        
+        .innerBox h1 {
+            font-size: 15vw;
+            background: linear-gradient(to right, #ff8a00, #da1b60, #3a4eea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 300% 300%;
+            animation: gradientBG 15s ease infinite;
+        }
+        
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .innerBox h2 {
+            color: #c2c2c2;
         }
         
     </style>
     
 </head>
 <body>
-    <h1>Eolikes</h1>
-    <h2>A Place of Free Online Tools</h2>
+   
+    <section class="mainContainer">
+        <div class="innerBox">
+            <h1>Eolikes</h1>
+            <h2>A Place of Free Online Tools</h2>
+        </div>
+    </section>
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147463150-1"></script>
